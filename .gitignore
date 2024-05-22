@@ -33,6 +33,9 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
+.yarn
+Podfile.lock
+
 
 # node.js
 #
