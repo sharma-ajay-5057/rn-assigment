@@ -1,8 +1,6 @@
 import * as React from 'react';
-import { Platform, useColorScheme, SafeAreaView } from 'react-native';
 import { NavigationContainer, Theme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { useSelector } from 'react-redux';
 import { navigationRef } from './NavigationService';
 import MyShifts from '../screen/MyShifts';
 import AvailableShifts from '../screen/AvailableShifts';

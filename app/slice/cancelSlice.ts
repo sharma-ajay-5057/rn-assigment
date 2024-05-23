@@ -6,7 +6,7 @@ export const fetchCancelData = createAsyncThunk(
   'users/fetchCancelData',
   async (params, thunkApi) => {
     try {
-      const response = await client.post(`${URL.CANCEL}/${params?.id}/cancel}`,{});
+      const response = await client.post(`${URL.CANCEL}/${params?.id}/cancel}`, {});
       console.log('cancel')
       return await response?.data;
     } catch (e) {

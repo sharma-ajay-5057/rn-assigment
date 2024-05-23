@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, TouchableOpacity, SectionList, SafeAreaView, ScrollView } from 'react-native';
+import { View, SectionList, SafeAreaView, } from 'react-native';
 import styles from './style';
-import { useNavigation } from '@react-navigation/native';
 import CustomText from '../../components/CustomText'
 import COLORS from '../../utils/colors';
 import CustomTouchableOpacity from '../../components/CustomTouchableOpacity';
@@ -17,7 +16,6 @@ const MyShifts: React.FC<Props> = props => {
   const [sections, setSections] = useState([]);
   const [data, setData] = useState();
   const shifts = useSelector((state: any) => state?.shift?.data);
-  console.log("shifts ::::", shifts)
 
   useEffect(() => {
     dispatch(fetchShiftsData());

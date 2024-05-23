@@ -1,6 +1,5 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 import COLORS from '../../utils/colors';
-const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -78,10 +77,10 @@ const styles = StyleSheet.create({
     headerItem: {
         alignItems: 'center',
         paddingVertical: 20,
-        width: width / 3
+        width: 400 / 3
     },
     mainItem: {
-        width: width,
+        width: 415,
     },
     headerBar: {
         height: 2,

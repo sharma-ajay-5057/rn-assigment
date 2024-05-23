@@ -69,7 +69,6 @@ const Tab1: React.FC<Props> = props => {
         dispatch(fetchBookData(payload));
     }
 
-
     const renderItem = ({ item }) => (
         <View style={styles.renderItemStyle}>
             <View style={{ justifyContent: 'center' }}>

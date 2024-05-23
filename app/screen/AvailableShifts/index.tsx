@@ -21,8 +21,8 @@ const AvailableShifts: React.FC<Props> = props => {
   const [turValue, setTurValue] = useState()
   const shifts = useSelector((state: any) => state?.shift?.data);
   const [active, setActive] = useState(0)
-  const headerScrollView = useRef();
-  const itemScrollView = useRef();
+  const headerScrollView = useRef<FlatList>(null);
+  const itemScrollView = useRef<FlatList>(null);
 
   useEffect(() => {
     dispatch(fetchShiftsData());
@@ -109,4 +109,3 @@ const AvailableShifts: React.FC<Props> = props => {
 AvailableShifts.defaultProps = {};
 
 export default AvailableShifts;
-

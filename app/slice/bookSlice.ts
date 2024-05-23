@@ -6,7 +6,7 @@ export const fetchBookData = createAsyncThunk(
   'users/fetchBookData',
   async (params, thunkApi) => {
     try {
-      const response = await client.post(`${URL.CANCEL}/${params?.id}/book}`,{});
+      const response = await client.post(`${URL.CANCEL}/${params?.id}/book}`, {});
       return await response?.data;
     } catch (e) {
       return thunkApi.rejectWithValue(e);

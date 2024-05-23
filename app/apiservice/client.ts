@@ -1,4 +1,3 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 
 export const client = async (
@@ -40,7 +39,6 @@ export const client = async (
 };
 
 client.get = async function (endpoint: any) {
-  let token = await AsyncStorage.getItem('ACCESS_TOKEN');
   return client(endpoint, 'GET', null);
 };
 
